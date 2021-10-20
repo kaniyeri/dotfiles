@@ -1,0 +1,15 @@
+set nu
+set clipboard:unnamed
+vnoremap <C-c> "*y
+color evening
+:set guifont=Lucida_Sans_Typewriter:h16:cANSI:qDRAFT
+set number
+set guioptions+=i
+
+
+augroup number
+    autocmd!
+    autocmd InsertEnter * set rnu
+    autocmd InsertLeave * set nornu
+
+augroup end
